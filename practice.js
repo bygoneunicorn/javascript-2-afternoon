@@ -15,8 +15,12 @@
 */
 
 //Code here
-
-
+var me = {
+  name: "Nathan",
+  age: 21
+}
+console.log(me.name);
+// I didn't want to alert it because every time I refresh the page I'll get that really annoying alert with my name
 
 ////////// PROBLEM 2 //////////
 
@@ -26,7 +30,14 @@
 */
 
 //Code here
-
+var favoriteThings = {
+  band: "Bastille",
+  food: "Stroganoff",
+  person: "Myself",
+  book: "Killer Angels",
+  movie: "Thor Ragnorok",
+  holiday: "Christmas"
+}
 
 
 /*
@@ -34,7 +45,8 @@
 */
 
 //Code here
-
+favoriteThings.car = "Audi R8";
+favoriteThings.brand = "Nike";
 
 
 /*
@@ -42,7 +54,8 @@
 */
 
 //Code here
-
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 
 ////////// PROBLEM 3 //////////
@@ -56,14 +69,21 @@
 */
 
 //Code here
+var backPack = {}
 
+var item = 'firstPocket';
+backPack[item] =  'chapstick';
 
+backPack.color = 'green';
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
+// again i'm gonna console log it because alerts are annoyingly stupid when i keep refreshing the page.
+// you can do it by going alert(backPack);
+console.log(backPack);
 
 
 
@@ -74,7 +94,8 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+// haha just saw this k.
+console.log(backPack);
 
 
 ////////// PROBLEM 4 //////////
@@ -97,7 +118,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 ////////// EXTRA PRACTICE PROBLEMS BELOW //////////
@@ -109,7 +131,7 @@ var user2 = {
 */
 
 //Code Here
-
+var methodCollection = {};
 
 
 /*
@@ -118,7 +140,12 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello = function alertHello(){
+  alert('hello');
+}
+methodCollection.logHello = function logHello(){
+  console.log('hello');
+}
 
 
 /*
@@ -126,7 +153,8 @@ var user2 = {
 */
 
 //Code Here
-
+// methodCollection.alertHello();
+methodCollection.logHello();
 
 
 ////////// PROBLEM 6 //////////
@@ -137,7 +165,14 @@ var user2 = {
 */
 
 //Code Here
+function makePerson(name, birthday, ssn){
+  var info = {}
+  info.name = name;
+  info.birthday = birthday;
+  info.ssn = ssn;
 
+  return info;
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -148,5 +183,12 @@ var user2 = {
 */
 
 //Code Here
+function makeCard(cardNumber, expirationDate, securityCode){
+  var newCard = {};
+  newCard.cardNumber = cardNumber;
+  newCard.expirationDate = expirationDate;
+  newCard.securityCode = securityCode;
 
+  return newCard;
+}
 
